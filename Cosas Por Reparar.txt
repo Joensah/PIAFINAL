@@ -1,0 +1,22 @@
+Carnet---Usar listas en vez de arreglos
+Vacuna---buscarla por lote en vez de marca
+busqueda binaria---Usar arbol en vez de listas
+
+--------------------
+reporte---Usar listas en vez de arreglos
+---------------------------------------
+
+Del los archivos de texto
+-El archivo de usuarios es en .txt
+
+De las validaciones
+-RFC no se repite pero aun lo marca como repetido(Registro Persona)
+-Cambiar el CURP y dejar un RFC repetido si lo valida(Registro Persona)
+
+
+Carnet---Usar listas en vez de arreglos
+Vacuna---buscarla por lote en vez de marca
+busqueda binaria---Usar arbol en vez de listas
+
+--------------------
+reporte---Usar listas en vez de arreglos

@@ -1,0 +1,718 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    V_Login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    V_Registro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    V_Bienvenida, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    V_RegistrarPersona, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    V_RegistrarVacuna, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    V_RegistrarCarnet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 575
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    V_EliminarVacuna, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    V_EliminarCarnet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    V_EditarPersona, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 528
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+
+    V_EditarCarnet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    V_EditarVacuna, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    V_BusquedaCarnet, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 588
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    V_ReportesPersonas, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 624
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 361
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+V_Login DIALOGEX 0, 0, 340, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Inicio De Sesión"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Inicio De Sesión",IDC_STATIC,7,29,326,8
+    LTEXT           "Usuario:",IDC_STATIC,46,63,28,8
+    LTEXT           "Contraseña:",IDC_STATIC,42,92,41,8
+    EDITTEXT        Login_Usuario,99,60,163,15,ES_AUTOHSCROLL
+    EDITTEXT        Login_Contrasena,99,88,163,16,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Entrar",B_Login,139,114,50,14
+    PUSHBUTTON      "Registrarse",B_RegistroUsuario,265,152,50,14
+    LTEXT           "¿Aún no tienes una cuenta?",IDC_STATIC,169,156,91,8
+END
+
+V_Registro DIALOGEX 0, 0, 332, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro De Usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        AU_Nombre,99,43,166,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre:",IDC_STATIC,58,46,30,8
+    LTEXT           "Apellido Paterno:",IDC_STATIC,31,67,57,8
+    LTEXT           "Apellido Materno:",IDC_STATIC,31,87,59,8
+    LTEXT           "Usuario:",IDC_STATIC,60,119,28,8
+    LTEXT           "Contraseña:",IDC_STATIC,50,137,41,8
+    CTEXT           "Ingrese sus datos a continuación",IDC_STATIC,7,16,318,8
+    EDITTEXT        AU_ApellidoP,98,63,167,14,ES_AUTOHSCROLL
+    EDITTEXT        AU_ApellidoM,101,83,163,14,ES_AUTOHSCROLL
+    EDITTEXT        AU_Usuario,99,117,161,14,ES_AUTOHSCROLL
+    EDITTEXT        AU_Contrasena,98,136,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Guardar",AU_Guardar,147,155,61,19
+END
+
+V_Bienvenida DIALOGEX 0, 0, 361, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro Control Covid-19"
+MENU V_MenuPrincipal
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Bienvenido Usuario UwU",IDC_STATIC,7,113,347,8
+END
+
+V_RegistrarPersona DIALOGEX 0, 0, 442, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro De Personas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nombre:",IDC_STATIC,60,22,30,8
+    LTEXT           "Apellido Paterno:",IDC_STATIC,33,38,57,8
+    EDITTEXT        AP_Edad,334,22,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        AP_ApellidoP,93,35,141,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_ApellidoM,93,54,141,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Curp,93,78,141,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Rfc,94,95,140,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Calle,93,119,112,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Colonia,93,138,142,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Ciudad,93,155,141,14,ES_AUTOHSCROLL
+    LTEXT           "Apellido Materno:",IDC_STATIC,33,58,59,8
+    LTEXT           "CURP:",IDC_STATIC,68,82,21,8
+    LTEXT           "RFC:",IDC_STATIC,73,98,21,8
+    LTEXT           "Calle:",IDC_STATIC,69,124,20,8
+    LTEXT           "Colonia:",IDC_STATIC,63,142,28,8
+    LTEXT           "Ciudad:",IDC_STATIC,63,158,26,8
+    EDITTEXT        AP_Estado,93,172,111,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_Telefono,93,189,141,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Estado:",IDC_STATIC,64,175,26,8
+    LTEXT           "Teléfono:",IDC_STATIC,58,193,32,8
+    LTEXT           "Grupo Ocupacional:",IDC_STATIC,23,219,65,8
+    EDITTEXT        AP_GpoOcupacional,92,216,144,14,ES_AUTOHSCROLL
+    EDITTEXT        AP_PerfilRiesgo,95,232,141,14,ES_AUTOHSCROLL
+    LTEXT           "Perfil De Riesgo:",IDC_STATIC,36,236,55,8
+    CONTROL         "",AP_FechaNacimiento,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,298,65,100,15
+    LTEXT           "Fecha De Nacimiento:",IDC_STATIC,310,47,72,8
+    PUSHBUTTON      "Examinar",AP_Examinar,326,180,50,14
+    LTEXT           "Estado Civil:",IDC_STATIC,330,93,41,8
+    LTEXT           "Sexo:",IDC_STATIC,338,129,20,8
+    LTEXT           "Documento De Identidad:",IDC_STATIC,310,168,84,8
+    COMBOBOX        AP_EstadoCivil,308,107,79,78,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        AP_Sexo,310,140,76,74,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Guardar",AP_Guardar,191,258,50,14
+    CONTROL         "",AP_Foto,"Static",SS_BITMAP,342,223,20,20
+    LTEXT           "#",IDC_STATIC,207,120,8,8
+    EDITTEXT        AP_Numero,217,117,48,14,ES_AUTOHSCROLL
+    LTEXT           "C.P.:",IDC_STATIC,209,175,17,8
+    EDITTEXT        AP_CodigoPostal,227,171,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Edad:",IDC_STATIC,307,25,20,8
+    EDITTEXT        AP_Nombre,93,17,141,14,ES_AUTOHSCROLL
+END
+
+V_RegistrarVacuna DIALOGEX 0, 0, 267, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro De Vacunas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        AV_Tipo,102,25,107,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tipo De Vacuna:",IDC_STATIC,34,27,55,8
+    EDITTEXT        AV_Marca,101,46,107,14,ES_AUTOHSCROLL
+    LTEXT           "Marca:",IDC_STATIC,66,50,24,8
+    EDITTEXT        AV_Dosis,102,72,107,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Dosis Necesarias:",IDC_STATIC,33,76,59,8
+    EDITTEXT        AV_Clave,103,116,107,14,ES_AUTOHSCROLL
+    LTEXT           "Clave:",IDC_STATIC,71,119,22,8
+    EDITTEXT        AV_Descripcion,102,156,110,36,ES_AUTOHSCROLL
+    LTEXT           "Descripción:",IDC_STATIC,55,159,41,8
+    EDITTEXT        AV_Precio,102,135,107,14,ES_AUTOHSCROLL
+    LTEXT           "Precio De Compra:",IDC_STATIC,34,140,63,8
+    PUSHBUTTON      "Guardar",AV_Guardar,111,202,50,14
+    LTEXT           "Vacunas Recibidas:",IDC_STATIC,28,95,64,8
+    EDITTEXT        AV_VacunasRecibidas,104,92,107,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+V_RegistrarCarnet DIALOGEX 0, 0, 582, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro De Carnet"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",AC_Registrar,200,281,50,14
+    LTEXT           "CURP:",IDC_STATIC,78,41,22,8
+    EDITTEXT        AC_CURP,113,38,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Buscar",AC_BuscaCURP,296,38,50,14
+    LTEXT           "Nombre:",IDC_STATIC,23,65,30,8
+    EDITTEXT        AC_Nombre,57,62,148,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Apellido Paterno:",IDC_STATIC,23,81,57,8
+    EDITTEXT        AC_ApellidoM,86,97,148,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Apellido Materno:",IDC_STATIC,23,99,59,8
+    EDITTEXT        AC_ApellidoP,86,78,148,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ingresa el CURP a continuación:",IDC_STATIC,144,19,106,8
+    LTEXT           "Fecha De Nacimiento:",IDC_STATIC,213,66,72,8
+    EDITTEXT        AC_FechaNacimiento,282,62,104,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Edad:",IDC_STATIC,259,84,20,8
+    EDITTEXT        AC_Edad,289,80,104,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sexo:",IDC_STATIC,262,101,20,8
+    EDITTEXT        AC_Sexo,289,97,105,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ingresa la vacuna a aplicar:",IDC_STATIC,152,125,92,8
+    LTEXT           "Vacuna:",IDC_STATIC,101,144,28,8
+    PUSHBUTTON      "Buscar",AC_BuscaVacuna,287,142,50,14
+    LTEXT           "Precio:",IDC_STATIC,46,183,24,8
+    EDITTEXT        AC_Precio,89,182,148,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Tipo de Vacuna:",IDC_STATIC,25,167,55,8
+    EDITTEXT        AC_TipoVacuna,89,164,148,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        AC_Vacuna,139,143,137,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lote:",IDC_STATIC,256,185,18,8
+    EDITTEXT        AC_Lote,280,183,87,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Dosis:",IDC_STATIC,61,209,21,8
+    LTEXT           "Fecha de aplicación:",IDC_STATIC,53,228,68,8
+    LTEXT           "Próxima Dosis:",IDC_STATIC,228,228,50,8
+    LTEXT           "Centro de vacunación:",IDC_STATIC,203,207,74,8
+    EDITTEXT        AC_Dosis,86,206,82,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        AC_Lugar,280,204,91,14,ES_AUTOHSCROLL
+    CONTROL         "",AC_FechaDosisActual,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,123,226,100,15
+    CONTROL         "",AC_FechaDosisSiguiente,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,283,224,100,15
+    CONTROL         "",AC_Foto,"Static",SS_BITMAP,488,76,13,11
+END
+
+V_EliminarVacuna DIALOGEX 0, 0, 311, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eliminar Vacuna"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Eliminar",BV_Eliminar,132,253,50,14
+    CTEXT           "Verifica que los datos sean correctos:",IDC_STATIC,7,21,297,8
+    LTEXT           "Marca:",IDC_STATIC,41,62,24,8
+    EDITTEXT        BV_Marca,73,60,109,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Buscar",BV_BuscarMarca,190,60,50,14
+    EDITTEXT        BV_Tipo,75,82,87,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BV_Clave,75,101,99,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BV_Dosis,76,121,114,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Tipo:",IDC_STATIC,39,83,18,8
+    LTEXT           "Clave:",IDC_STATIC,38,105,22,8
+    LTEXT           "No. Dosis:",IDC_STATIC,25,122,34,8
+    LTEXT           "Vacunas:",IDC_STATIC,27,148,31,8
+    LTEXT           "Precio:",IDC_STATIC,32,169,31,10
+    LTEXT           "Descripción:",IDC_STATIC,15,189,42,10
+    EDITTEXT        BV_Descripcion,76,188,148,44,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BV_Vacunas,76,145,124,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BV_Precio,75,168,139,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+V_EliminarCarnet DIALOGEX 0, 0, 415, 286
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eliminar Carnet"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Eliminar",BC_Eliminar,186,265,50,14
+    CTEXT           "Verifica que los datos sean correctos:",IDC_STATIC,7,21,401,8
+    LTEXT           "ID Carnet:",IDC_STATIC,29,64,35,8
+    EDITTEXT        BC_Carnet,73,60,147,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Buscar",BC_Buscar,228,60,50,14
+    EDITTEXT        BC_Nombre,74,80,168,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BC_ApellidoP,79,104,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BC_ApellidoM,79,126,129,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nombre:",IDC_STATIC,39,83,30,8
+    LTEXT           "Apellido Paterno:",IDC_STATIC,19,107,57,8
+    LTEXT           "Apellido Materno:",IDC_STATIC,15,128,59,8
+    LTEXT           "Fecha De Nacimiento:",IDC_STATIC,223,130,72,8
+    LTEXT           "Vacuna a aplicar:",IDC_STATIC,27,171,78,10
+    LTEXT           "No. De Dosis:",IDC_STATIC,39,188,83,10
+    EDITTEXT        BC_FechaNacimiento,301,126,80,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BC_Edad,295,101,70,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sexo:",IDC_STATIC,271,85,31,10
+    EDITTEXT        BC_Dosis,95,186,139,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BC_Sexo,296,83,70,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Edad:",IDC_STATIC,266,102,31,10
+    CONTROL         "",BC_Foto,"Static",SS_BITMAP,319,189,13,11
+    EDITTEXT        BC_Vacuna,93,168,139,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Próxima Dosis:",IDC_STATIC,36,210,53,10
+    LTEXT           "Lugar:",IDC_STATIC,62,230,28,10
+    EDITTEXT        BC_Lugar,97,227,139,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BC_ProxDosis,96,208,139,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+V_EditarPersona DIALOGEX 0, 0, 535, 338
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Editar Persona"
+MENU V_EditPersona
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Editar",CP_Editar,247,317,49,14
+    CTEXT           "Confirme los datos a modificar:",IDC_STATIC,7,21,521,8
+    EDITTEXT        CP_Dato,142,51,133,14,ES_AUTOHSCROLL
+    CONTROL         "",CP_Foto,"Static",SS_BITMAP,421,103,13,11
+    LTEXT           "RFC:",CP_Static,119,53,17,8
+    DEFPUSHBUTTON   "Examinar",CP_Examina,269,112,50,14
+    EDITTEXT        CP_Nombre,79,88,133,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre:",IDC_STATIC,42,90,30,8
+    EDITTEXT        CP_ApellidoM,79,130,133,14,ES_AUTOHSCROLL
+    LTEXT           "Apellido Materno:",IDC_STATIC,15,133,59,8
+    LTEXT           "Apellido Paterno:",IDC_STATIC,14,114,57,8
+    EDITTEXT        CP_ApellidoP,78,110,133,14,ES_AUTOHSCROLL
+    LTEXT           "Documento de identificación:",IDC_STATIC,239,91,95,8
+    DEFPUSHBUTTON   "Buscar",CP_Buscar,282,52,50,14
+    LTEXT           "Sexo:",IDC_STATIC,19,169,20,8
+    EDITTEXT        CP_Edad,152,164,58,14,ES_AUTOHSCROLL
+    LTEXT           "Edad:",IDC_STATIC,129,167,20,8
+    LTEXT           "Estado Civil:",IDC_STATIC,217,165,41,8
+    LTEXT           "Fecha De Nacimiento:",IDC_STATIC,339,166,72,8
+    EDITTEXT        CP_SexoAnterior,46,182,76,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        CP_Sexo,47,165,75,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        CP_FechaNacimientoAnterior,419,184,93,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        CP_EstadoCivilAnterior,263,183,70,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",CP_FechaNacimiento,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,417,164,100,15
+    COMBOBOX        CP_EstadoCivil,259,163,75,78,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grupo Ocupacional:",IDC_STATIC,19,213,65,8
+    EDITTEXT        CP_GrupoOc,89,210,91,14,ES_AUTOHSCROLL
+    LTEXT           "Perfil De Riesgo:",IDC_STATIC,189,213,55,8
+    EDITTEXT        CP_PerfilRiesgo,254,209,91,14,ES_AUTOHSCROLL
+    LTEXT           "Teléfono:",IDC_STATIC,357,213,32,8
+    EDITTEXT        CP_Telefono,399,211,91,14,ES_AUTOHSCROLL
+    CTEXT           "Domicilio",IDC_STATIC,7,237,521,8
+    LTEXT           "Calle:",IDC_STATIC,29,263,20,8
+    LTEXT           "Número:",IDC_STATIC,186,260,30,8
+    LTEXT           "Colonia:",IDC_STATIC,306,260,28,8
+    LTEXT           "Ciudad:",IDC_STATIC,24,290,26,8
+    LTEXT           "Estado:",IDC_STATIC,190,286,28,8
+    LTEXT           "Código Postal:",IDC_STATIC,307,285,52,8
+    EDITTEXT        CP_Numero,219,257,74,14,ES_AUTOHSCROLL
+    EDITTEXT        CP_Calle,54,258,123,14,ES_AUTOHSCROLL
+    EDITTEXT        CP_Colonia,336,259,123,14,ES_AUTOHSCROLL
+    EDITTEXT        CP_Ciudad,57,285,123,14,ES_AUTOHSCROLL
+    EDITTEXT        CP_Estado,222,283,75,14,ES_AUTOHSCROLL
+    EDITTEXT        CP_CodigoPostal,357,282,103,14,ES_AUTOHSCROLL
+END
+
+V_EditarCarnet DIALOGEX 0, 0, 463, 351
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Editar Carnet"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Editar",CC_Editar,206,330,50,14
+    LTEXT           "ID Carnet:",IDC_STATIC,64,25,35,8
+    CONTROL         "",CC_Foto,"Static",SS_BITMAP,321,191,13,11
+    CONTROL         "",CC_FechaAplicacion,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,99,228,100,15
+    EDITTEXT        CC_Carnet,103,23,133,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Buscar",CC_Buscar,247,24,50,14
+    LTEXT           "Nombre:",IDC_STATIC,122,68,30,8
+    EDITTEXT        CC_Nombre,158,65,192,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Apellido Paterno:",IDC_STATIC,16,98,57,8
+    LTEXT           "Apellido Materno:",IDC_STATIC,224,100,59,8
+    EDITTEXT        CC_ApellidoM,291,97,133,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        CC_ApellidoP,77,96,133,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Fecha Nacimiento:",IDC_STATIC,18,131,62,8
+    EDITTEXT        CC_FechaNacimiento,85,128,123,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sexo:",IDC_STATIC,221,134,20,8
+    EDITTEXT        CC_Sexo,245,132,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Edad:",IDC_STATIC,326,135,20,8
+    EDITTEXT        CC_Edad,350,133,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vacuna a aplicar:",IDC_STATIC,34,160,58,8
+    COMBOBOX        CC_VacunaAAplicar,97,159,102,95,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        CC_VacunaAAplicarAnterior,97,179,101,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "No. de Dosis:",IDC_STATIC,49,210,44,8
+    EDITTEXT        CC_Dosis,98,207,65,14,ES_AUTOHSCROLL
+    LTEXT           "Fecha de Aplicación:",IDC_STATIC,25,231,68,8
+    CONTROL         "",CC_ProximaDosis,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,293,255,100,15
+    LTEXT           "Próxima Dosis:",IDC_STATIC,237,259,50,8
+    LTEXT           "Lugar de Aplicación:",IDC_STATIC,32,284,67,8
+    EDITTEXT        CC_FechaAplicacionAnterior,99,247,101,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        CC_ProximaDosisAnterior,294,278,101,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        CC_Lugar,102,281,102,14,ES_AUTOHSCROLL
+END
+
+V_EditarVacuna DIALOGEX 0, 0, 413, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Editar Vacuna"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Editar",CV_Editar,181,219,50,14
+    LTEXT           "Marca:",IDC_STATIC,88,25,24,8
+    EDITTEXT        CV_Marca,124,23,123,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Buscar",CV_Buscar,257,24,50,14
+    LTEXT           "Clave Vacuna:",IDC_STATIC,29,62,48,8
+    EDITTEXT        CV_Clave,82,58,123,14,ES_AUTOHSCROLL
+    LTEXT           "Tipo:",IDC_STATIC,55,87,18,8
+    COMBOBOX        CV_Tipo,83,84,122,124,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Descripción:",IDC_STATIC,277,100,41,8
+    EDITTEXT        CV_Descripcion,239,113,146,86,ES_AUTOHSCROLL
+    EDITTEXT        CV_TipoAnterior,85,101,123,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Dosis Requeridas:",IDC_STATIC,18,144,60,8
+    EDITTEXT        CV_DosisReq,84,141,123,14,ES_AUTOHSCROLL
+    LTEXT           "Vacunas Importadas:",IDC_STATIC,14,166,71,8
+    EDITTEXT        CV_VacunasImp,84,164,123,14,ES_AUTOHSCROLL
+    LTEXT           "Precio:",IDC_STATIC,55,187,24,8
+    EDITTEXT        CV_Precio,85,185,123,14,ES_AUTOHSCROLL
+END
+
+V_BusquedaCarnet DIALOGEX 0, 0, 595, 288
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Busqueda De Carnet"
+MENU V_BusCarnet
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Buscar",BBCC_Buscar,362,24,50,14
+    LISTBOX         BBCC_ListaBusqueda,7,7,139,274,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        BBCC_Dato,221,23,134,14,ES_AUTOHSCROLL
+    LTEXT           "No. De Carnet:",BBCC_Cambio,165,26,50,8
+    CONTROL         "",BBCC_Foto,"Static",SS_BITMAP,483,188,13,11
+    EDITTEXT        BBCC_Nombre,208,59,134,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nombre:",IDC_STATIC,169,62,30,8
+    EDITTEXT        BBCC_ApellidoP,234,79,106,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Apellido Paterno:",IDC_STATIC,172,82,57,8
+    LTEXT           "Apellido Materno:",IDC_STATIC,169,103,59,8
+    LTEXT           "Fecha De Nacimiento:",IDC_STATIC,358,60,72,8
+    LTEXT           "Edad:",IDC_STATIC,407,82,20,8
+    LTEXT           "Sexo:",IDC_STATIC,408,102,20,8
+    EDITTEXT        BBCC_FechaNacimiento,434,57,109,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BBCC_ApellidoM,235,99,106,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BBCC_Edad,434,78,106,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BBCC_Sexo,435,98,106,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BBCC_VacunaAplicar,241,142,134,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vacuna a Aplicar:",IDC_STATIC,178,147,59,8
+    EDITTEXT        BBCC_TipoVacuna,243,164,133,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Tipo De Vacuna:",IDC_STATIC,183,169,55,8
+    LTEXT           "Lugar De Aplicación:",IDC_STATIC,173,188,68,8
+    EDITTEXT        BBCC_LugarAplicacion,247,185,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        BBCC_FechaAplicacion,246,210,134,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Fecha De Aplicación:",IDC_STATIC,171,213,69,8
+    EDITTEXT        BBCC_ProximaDosis,247,233,134,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Próxima Dosis:",IDC_STATIC,190,235,50,8
+    LTEXT           "Dosis A Aplicar:",IDC_STATIC,187,256,52,8
+    EDITTEXT        BBCC_DosisAplicar,246,254,134,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+V_ReportesPersonas DIALOGEX 0, 0, 631, 368
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reporte de Personas"
+MENU V_BusReporte
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         RP_Lista,7,50,86,311,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reportes",RP_Reportes,21,25,50,14
+    LTEXT           "Nombre:",IDC_STATIC,103,55,30,8
+    EDITTEXT        RP_Nombre,138,52,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Apellido Paterno:",IDC_STATIC,259,56,57,8
+    LTEXT           "Apellido Materno:",IDC_STATIC,438,56,59,8
+    LTEXT           "Datos Personales",IDC_STATIC,293,25,57,8
+    LTEXT           "Datos de La Vacuna",IDC_STATIC,292,284,66,8
+    EDITTEXT        RP_ApellidoP,319,54,111,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        RP_ApellidoM,502,53,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sexo:",IDC_STATIC,113,80,20,8
+    LTEXT           "Edad:",IDC_STATIC,231,81,20,8
+    LTEXT           "Nacimiento:",IDC_STATIC,335,79,40,8
+    EDITTEXT        RP_Sexo,138,77,84,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        RP_Edad,253,76,70,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        RP_Nacimiento,378,75,85,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Estado Civil:",IDC_STATIC,478,78,41,8
+    EDITTEXT        RP_EstadoCivil,524,75,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Grupo Ocupacional:",IDC_STATIC,111,106,65,8
+    EDITTEXT        RP_GrupoOcupacional,179,103,84,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Perfil de Riesgo:",IDC_STATIC,278,107,55,8
+    EDITTEXT        RP_Telefono,471,105,84,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Teléfono:",IDC_STATIC,437,107,32,8
+    EDITTEXT        RP_PerfilRiesgo,334,104,84,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "RFC:",IDC_STATIC,120,128,17,8
+    EDITTEXT        RP_RFC,143,125,145,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CURP:",IDC_STATIC,310,130,22,8
+    EDITTEXT        RP_CURP,336,127,161,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Calle:",IDC_STATIC,117,153,20,8
+    EDITTEXT        RP_Calle,140,150,145,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Colonia:",IDC_STATIC,296,155,28,8
+    EDITTEXT        RP_Colonia,329,152,145,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Número:",IDC_STATIC,489,156,30,8
+    EDITTEXT        RP_Numero,526,153,71,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ciudad:",IDC_STATIC,118,180,26,8
+    EDITTEXT        RP_Ciudad,151,176,145,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Estado:",IDC_STATIC,313,179,26,8
+    EDITTEXT        RP_Estado,354,177,145,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",RP_Foto,"Static",SS_BITMAP,315,230,13,11
+    LTEXT           "Marca:",IDC_STATIC,153,310,24,8
+    EDITTEXT        RP_Marca,181,307,120,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Dosis Actual:",IDC_STATIC,333,311,43,8
+    EDITTEXT        RP_DosisActual,382,308,109,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Última Dosis Aplicada:",IDC_STATIC,109,336,74,8
+    EDITTEXT        RP_UltimaDosis,188,333,114,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Próxima Dosis:",IDC_STATIC,333,337,50,8
+    EDITTEXT        RP_ProximaDosis,389,334,101,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+V_Login AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_Registro AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_Bienvenida AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_RegistrarPersona AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_RegistrarVacuna AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_RegistrarCarnet AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_EliminarVacuna AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_EliminarCarnet AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_EditarPersona AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_EditarCarnet AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_EditarVacuna AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_BusquedaCarnet AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+V_ReportesPersonas AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+V_MenuPrincipal MENU
+BEGIN
+    POPUP "Registro"
+    BEGIN
+        MENUITEM "Persona",                     ID_REGISTRO_PERSONA
+        MENUITEM "Vacuna",                      ID_REGISTRO_VACUNA
+        MENUITEM "Carnet",                      ID_REGISTRO_CARNET
+    END
+    POPUP "Modificar"
+    BEGIN
+        MENUITEM "Persona",                     ID_MODIFICAR_PERSONA
+        MENUITEM "Vacuna",                      ID_MODIFICAR_VACUNA
+        MENUITEM "Carnet",                      ID_MODIFICAR_CARNET
+    END
+    POPUP "Baja"
+    BEGIN
+        MENUITEM "Vacuna",                      ID_BAJA_VACUNA
+        MENUITEM "Carnet",                      ID_BAJA_CARNET
+    END
+    MENUITEM "Reporte",                     ID_REPORTE
+    MENUITEM "Buscar Carnet",               ID_BUSCAR_CARNET
+    MENUITEM "Salir",                       ID_Salir
+END
+
+V_EditPersona MENU
+BEGIN
+    MENUITEM "Editar por CURP",             40018
+    MENUITEM "Editar por RFC",              40019
+END
+
+V_BusCarnet MENU
+BEGIN
+    MENUITEM "Por Nombre(Secuencial)",      40020
+    MENUITEM "Por Carnet(Binaria)",         B_CarnetBin
+END
+
+V_BusReporte MENU
+BEGIN
+    MENUITEM "Por Nombre (QuickSort)",      40025
+    MENUITEM "Por Carnet (HeapSort)",       RP_CarnetHeap
+END
+
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

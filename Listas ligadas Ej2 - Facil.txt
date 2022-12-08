@@ -1,0 +1,17 @@
+struct DatosCiudadano {
+	char Nombre[30],
+		ApellidoPaterno[25],
+		ApellidoMaterno[25],
+		Clave[10],
+		DocumentoIdentidad[30],
+		Direccion[100],
+		FechaNacimiento[20],
+		Sexo[10],
+		PerfilDeRiesgo[30] = "";
+	int claveint;
+	int foto;
+	BOOL dosiscompleta;
+	BOOL primeradosis;
+	DatosCiudadano* next = NULL;
+	DatosCiudadano* prev = NULL;
+}*CiudadanoOrigen, *CiudadanoAuxiliar;

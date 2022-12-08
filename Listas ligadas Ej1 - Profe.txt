@@ -1,0 +1,44 @@
+struct USUARIO {
+	char usuario[100];
+	char password[100];
+	void setUsuario(string usuarioP) {
+		strcpy_s(usuario, 100, usuarioP.c_str());
+	}
+	string getUsuario() {
+		string str(usuario);
+		return str;
+	}
+	void setPassword(string passwordP) {
+		strcpy_s(password, 100, passwordP.c_str());
+	}
+	string getPassword() {
+		string str(password);
+		return str;
+	}
+};
+
+struct NODOUSUARIO {
+	USUARIO* usuario = NULL;
+	NODOUSUARIO* siguiente = NULL;
+	NODOUSUARIO* anterior = NULL;
+};
+
+struct LISTAUSUARIOS {
+	NODOUSUARIO* origen = NULL;
+	NODOUSUARIO* fin = NULL;
+	void aniadir(USUARIO *nuevo) {
+		if (origen == NULL) {
+			origen = new NODOUSUARIO;
+			origen->usuario = nuevo;
+		}
+		else {
+			NODOUSUARIO* elemento = origen;
+			while (elemento->siguiente != NULL)
+				elemento = elemento->siguiente;
+			elemento->siguiente = new NODOUSUARIO;
+			elemento->siguiente->usuario = nuevo;
+			elemento->siguiente->anterior = elemento;
+			fin = elemento->siguiente;
+		}
+	}
+}USUARIOS;
